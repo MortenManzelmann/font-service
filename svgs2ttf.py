@@ -42,12 +42,8 @@ def addGlyphs(font, config):
             value = {'src': value or src}
         src = '%s%s%s' % (config.get('input', '.'), os.path.sep, value.pop('src', src))
         glyph.importOutlines(src)
-        print(glyph.anchorPoints)
-        print(glyph.vhints)
-        glyph.removeOverlap()
         glyph.left_side_bearing = 0
         glyph.right_side_bearing = 20
-        #g.width = 500
         for k2, v2 in value.items():
             if hasattr(glyph, k2):
                 if isinstance(v2, list):
