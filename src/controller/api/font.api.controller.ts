@@ -16,6 +16,7 @@ class FontApiController implements Controller {
   }
 
   private get = (_request: Request, response: Response): void => {
+    console.log('Hello there');
     response.download(`${process.cwd()}/example.ttf`);
   }
 

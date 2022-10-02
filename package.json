@@ -14,14 +14,16 @@
   },
   "scripts": {
     "dev": "ts-node ./src/server.ts",
-    "build": "./node_modules/typescript/bin/tsc",                                                                                                               
-    "start": "node ./dist/server.js",
-    "build:start": "yarn run build && yarn run start" 
+    "build": "./node_modules/typescript/bin/tsc",
+    "start": "nodemon ./dist/server.js",
+    "build:start": "yarn run build && yarn run start",
+    "watch": "yarn run build --watch"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
     "@types/cors": "^2.8.10",
     "@types/express": "^4.17.12",
-    "@types/node": "^16.0.0"
+    "@types/node": "^16.0.0",
+    "nodemon": "^2.0.20"
   }
 }

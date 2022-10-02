@@ -93,3 +93,13 @@ Some customizations might be best done by editing the script. (See the
   [fontforge#1374](https://github.com/fontforge/fontforge/issues/1374))
   were only recently corrected.
 
+TODO:
+
+NoSql DB
+
+userHash{
+  fontHash: hdhk43hrjk4hrkh
+  glyphs:{
+    ...
+  }
+}
